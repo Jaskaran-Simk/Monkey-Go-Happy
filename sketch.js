@@ -74,7 +74,9 @@ function draw(){
   ground.x = ground.width/2
 }
 
-
+if(monkey.isTouching(banana_Group)){
+banana_Group.destroyEach();
+count = count+3
 
 
   //jump when the space key is pressed
@@ -103,11 +105,6 @@ if(monkey.isTouching(obstacle_Group)){
 
  
   }
-function scoring (){
-if(monkey.isTouching(banana_Group)){
-banana_Group.destroyEach();
-count = count+3
-}
 
 
 if(gameState === END){
@@ -142,6 +139,11 @@ text("SCORE:"+count,500,50)
   scoring();
 }
 
+function scoring () {
+if(monkey.isTouching(banana_Group)){
+banana_Group.destroyEach();
+count = count+3
+}
 
 
 
