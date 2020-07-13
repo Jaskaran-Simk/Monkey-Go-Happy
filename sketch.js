@@ -87,10 +87,7 @@ function draw(){
 
   
  
-  if(monkey.isTouching(banana_Group)){
-banana_Group.destroyEach();
-count = count+3
-  }
+ 
 
 spawnObstacles();
  spawnBanana();
@@ -104,7 +101,10 @@ if(monkey.isTouching(obstacle_Group)){
 
  }
 
- 
+ if(monkey.isTouching(banana_Group)){
+banana_Group.destroyEach();
+count = count+3
+  } 
 
 
 if(gameState === END){
