@@ -103,10 +103,11 @@ if(monkey.isTouching(obstacle_Group)){
 
  
   }
-
+function scoring (){
 if(monkey.isTouching(banana_Group)){
 banana_Group.destroyEach();
 count = count+3
+}
 
 
 if(gameState === END){
@@ -138,6 +139,7 @@ drawSprites();
 
 monkey.collide(colliding_line)
 text("SCORE:"+count,500,50)
+  scoring();
 }
 
 
