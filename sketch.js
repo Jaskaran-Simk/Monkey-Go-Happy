@@ -117,7 +117,6 @@ banana_Group.destroyEach();
 gameOver.visible = true;
 reset.visible = true;
 
-count = count-count
 
 if(mousePressedOver(reset)|| keyDown("enter")){
   gameState = PLAY
@@ -125,6 +124,7 @@ if(mousePressedOver(reset)|| keyDown("enter")){
  gameOver.visible = false;
  ground.visible = true;
  monkey.visible = true;
+  count =count-count
  
   
 }
@@ -145,7 +145,7 @@ function spawnObstacles() {
   if(frameCount % 200 === 0) {
      obstacle = createSprite(650,420.5,10,40);
     
-    obstacle.velocityX = -4
+    obstacle.velocityX = -6
    
     obstacle.addImage("stone",obstacle_img)
     
