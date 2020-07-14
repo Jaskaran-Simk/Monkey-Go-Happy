@@ -187,5 +187,7 @@ if(frameCount % 80 === 0) {
   //banana.setCollider("circle")
   banana_Group.add(banana)
   
+}
+  
 
 }}
