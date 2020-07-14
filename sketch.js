@@ -77,7 +77,7 @@ function draw(){
 if(monkey.isTouching(banana_Group)){
 banana_Group.destroyEach();
 count = count+3
-
+}
 
   //jump when the space key is pressed
   if(keyDown("space")&& monkey.y > 350){
