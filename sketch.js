@@ -87,10 +87,7 @@ function draw(){
 
   
  
-  if(monkey.isTouching(banana_Group)){
-banana_Group.destroyEach();
-count = count+3
-  }
+
 
 spawnObstacles();
  spawnBanana();
@@ -125,12 +122,16 @@ if(mousePressedOver(reset)|| keyDown("enter")){
  gameOver.visible = false;
  ground.visible = true;
  monkey.visible = true;
- 
+ count = count-count
   
 }
 }
 
-
+  if(monkey.isTouching(banana_Group)){
+banana_Group.destroyEach();
+    
+count = count+3
+  }
 
 drawSprites();
 
