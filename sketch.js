@@ -73,11 +73,7 @@ function draw(){
  if(ground.x < 0){
   ground.x = ground.width/2
 }
-  if(monkey.isTouching(banana_Group)){
-banana_Group.destroyEach();
-    
-count = count+3
-  }
+
 
 
 
@@ -131,7 +127,11 @@ if(mousePressedOver(reset)|| keyDown("enter")){
   
 }
 }
-
+  if(monkey.isTouching(banana_Group)){
+banana_Group.destroyEach();
+    
+count = count+3
+  }
 
 
 drawSprites();
